@@ -1,0 +1,24 @@
+namespace InterestFinder.Migrations
+{
+    using System;
+    using System.Data.Entity.Migrations;
+    
+    public partial class AddedSentFromInMsgController : DbMigration
+    {
+        public override void Up()
+        {
+            DropForeignKey("dbo.Messages", "Sender_Id", "dbo.AspNetUsers");
+            DropIndex("dbo.Messages", new[] { "Sender_Id" });
+            AddColumn("dbo.Messages", "Sender", c => c.String());
+            DropColumn("dbo.Messages", "Sender_Id");
+        }
+        
+        public override void Down()
+        {
+            AddColumn("dbo.Messages", "Sender_Id", c => c.String(maxLength: 128));
+            DropColumn("dbo.Messages", "Sender");
+            CreateIndex("dbo.Messages", "Sender_Id");
+            AddForeignKey("dbo.Messages", "Sender_Id", "dbo.AspNetUsers", "Id");
+        }
+    }
+}

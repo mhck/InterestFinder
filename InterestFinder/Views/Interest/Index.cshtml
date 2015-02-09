@@ -1,0 +1,17 @@
+﻿@model IEnumerable<InterestFinder.Models.Interest>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Interests</h2>
+<h4>Find new interests and make posts on the boards!</h4>
+
+<div>
+    @foreach (var item in Model)
+    {
+        <a href="~/Interest/Details/@item.InterestID">
+            <img class="img-rounded" src="~/Res/@Html.DisplayFor(i => item.ImageURL)" height="170" width="150" />
+        </a>
+    }
+</div>

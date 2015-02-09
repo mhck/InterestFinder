@@ -1,0 +1,50 @@
+﻿@model InterestFinder.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Post</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.InterestID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InterestID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeaderText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeaderText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContentText)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContentText)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimePosted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimePosted)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PostID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
