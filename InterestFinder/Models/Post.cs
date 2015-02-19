@@ -11,7 +11,7 @@ namespace InterestFinder.Models
     {
         public int PostID { get; set; }
         public int InterestID { get; set; }
-        public ApplicationUser Sender { get; set; }
+        public string Sender { get; set; }
 
         [DisplayName("Title")]
         public string HeaderText { get; set; }

@@ -84,6 +84,7 @@ namespace InterestFinder.Controllers
                 post.HeaderText = formCollection["PostToCreate.HeaderText"];
                 post.InterestID = Convert.ToInt32(formCollection["PostToCreate.InterestID"]);
                 post.TimePosted = DateTime.Parse(formCollection["PostToCreate.TimePosted"]);
+                post.Sender = User.Identity.Name;
                 Interest interest = db.Interests.Find(post.InterestID);
                 db.Posts.Add(post);
                 db.SaveChanges();
