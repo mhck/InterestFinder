@@ -214,3 +214,4 @@ C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\InterestFinde
 C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\InterestFinder\obj\Debug\ApplicationInsights.config
 C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\InterestFinder\obj\Debug\InterestFinder.dll
 C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\InterestFinder\obj\Debug\InterestFinder.pdb
+C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\InterestFinder\obj\Debug\InterestFinder.csprojResolveAssemblyReference.cache

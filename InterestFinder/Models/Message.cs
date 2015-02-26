@@ -18,7 +18,7 @@ namespace InterestFinder.Models
         public string ReceiverName { get; set; }
         
         [DisplayName("From")]
-        public string SenderName { get; set; }
+        public string SenderName { get; set; } 
         
         public ApplicationUser Receiver { get; set; }
         

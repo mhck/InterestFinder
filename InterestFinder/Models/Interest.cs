@@ -15,15 +15,19 @@ namespace InterestFinder.Models
         public string Category { get; set; }
         public bool AdultOnly { get; set; }
         public string ImageURL { get; set; }
-        public System.Drawing.Image ImageThumbnail { get; set; }
 
+        public System.Drawing.Image ImageThumbnail { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
 
-        public void CreateThumbnail()
+        public System.Drawing.Image CreateThumbnail()
         {
-            System.Drawing.Image image = System.Drawing.Image.FromFile(ImageURL);
-            ImageThumbnail = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero);
-            //thumb.Save(Path.ChangeExtension(ImageURL, "thumb"));
+            System.Drawing.Image imageThumb = null;
+            if (ImageURL != null)
+            {
+                System.Drawing.Image image = System.Drawing.Image.FromFile(ImageURL);
+                imageThumb = image.GetThumbnailImage(120, 120, () => false, IntPtr.Zero); // image scaling
+            }
+            return imageThumb;
         }
     }
 }

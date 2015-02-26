@@ -338,7 +338,6 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationInformation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Interest.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Message.cs" />
