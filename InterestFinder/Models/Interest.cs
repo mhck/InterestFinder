@@ -15,8 +15,6 @@ namespace InterestFinder.Models
         public string Category { get; set; }
         public bool AdultOnly { get; set; }
         public string ImageURL { get; set; }
-
-        public System.Drawing.Image ImageThumbnail { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
 
         public System.Drawing.Image CreateThumbnail()

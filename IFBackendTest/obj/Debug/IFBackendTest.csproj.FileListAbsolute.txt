@@ -1,0 +1,1 @@
+C:\Users\mhck\Documents\Visual Studio 2013\Projects\InterestFinder\IFBackendTest\obj\Debug\IFBackendTest.csprojResolveAssemblyReference.cache
